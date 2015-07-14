@@ -1,13 +1,15 @@
 window.addEventListener("deviceorientation", handleOrientation, true);
 
 var alphaInRadians = 0;
+var betaInRadians = 0;
 
 function handleOrientation(event) {
   var absolute = event.absolute;
-  var alpha    = event.alpha;
-  var beta     = event.beta;
-  var gamma    = event.gamma;
+  var alpha    = event.alpha;//0 - 360
+  var beta     = event.beta; //0 (stright down) - 180 (straight up)
+  var gamma    = event.gamma;//
   alphaInRadians = 3.1415926535*(alpha/(180));
+  betaInRadians = 3.1415926535*(beta/180);
 
   document.getElementById("absolute").innerHTML = absolute;
   document.getElementById("alpha").innerHTML = alpha;
