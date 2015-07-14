@@ -32,6 +32,7 @@
        <pair><key>beta:  </key><value id="beta">value</value></pair><br>
        <pair><key>gamma:  </key><value id="gamma">value</value></pair><br>
        <pair><key>alphaInRadians:  </key><value id="alphaInRadians">value</value></pair>
+       <pair><key>betaInRadians:  </key><value id="betaInRadians">value</value></pair>
       </pairlist>
   <canvas id="renderCanvas"></canvas>
   <script>
@@ -87,6 +88,7 @@ var scene = createScene();
 // Register a render loop to repeatedly render the scene
   engine.runRenderLoop(function () {
     scene.activeCamera.alpha = alphaInRadians;
+    scene.activeCamera.beta = betaInRadians;
     scene.render();
   });
 
