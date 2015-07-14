@@ -7,7 +7,7 @@ function handleOrientation(event) {
   var alpha    = event.alpha;
   var beta     = event.beta;
   var gamma    = event.gamma;
-  alphaInRadians = Math.PI*(alpha/(180));
+  alphaInRadians = 3.1415926535*(alpha/(180));
 
   document.getElementById("absolute").innerHTML = absolute;
   document.getElementById("alpha").innerHTML = alpha;
