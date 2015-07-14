@@ -52,7 +52,7 @@ var createScene = function () {
 
   // This creates and positions a free camera
   //var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
-  var camera = new BABYLON.DeviceOrientationCamera("DevOr_camera", new BABYLON.Vector3(0, 1, -15), scene);
+  var camera = new BABYLON.WebVRFreeCamera("WVR", new BABYLON.Vector3(0, 1, -15), scene);
 
   // This targets the camera to scene origin
   //camera.setTarget(BABYLON.Vector3.Zero());
