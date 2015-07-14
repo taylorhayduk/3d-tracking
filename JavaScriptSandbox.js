@@ -1,5 +1,7 @@
 window.addEventListener("deviceorientation", handleOrientation, true);
 
+var alphaInRadians = 0;
+
 function handleOrientation(event) {
   var absolute = event.absolute;
   var alpha    = event.alpha;
@@ -11,4 +13,5 @@ function handleOrientation(event) {
   document.getElementById("beta").innerHTML = beta;
   document.getElementById("gamma").innerHTML = gamma;
   // Do stuff with the new orientation data
+  alphaInRadians = alpha/(Math.pi*2);
 }
