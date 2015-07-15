@@ -1,7 +1,7 @@
 window.addEventListener("deviceorientation", handleOrientation, true);
 
-var alphaInRadians = 0;
-var betaInRadians = 0;
+var alphaInRadians = false;
+var betaInRadians = false;
 
 function handleOrientation(event) {
   var absolute = event.absolute;

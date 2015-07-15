@@ -96,8 +96,10 @@ var scene = createScene();
 
 // Register a render loop to repeatedly render the scene
   engine.runRenderLoop(function () {
-    scene.activeCamera.alpha = alphaInRadians;
-    scene.activeCamera.beta = betaInRadians;
+    if (alphaInRadians != false) {
+      scene.activeCamera.alpha = alphaInRadians;
+      scene.activeCamera.beta = betaInRadians;
+    };
     scene.render();
   });
 
